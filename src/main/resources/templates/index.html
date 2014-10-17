@@ -10,6 +10,9 @@
 
 <body>
     <p th:text="|From controller: ${message}|">Thymeleaf is working!!</p>
+    <ol>
+        <li th:each="city : ${cities}" th:text="|${city.name} - ${city.country}|" />
+    </ol>
 </body>
 </html>
 
